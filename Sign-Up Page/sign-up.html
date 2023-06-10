@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrow-Service</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="sign-up.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal" role="form" onsubmit="validateEmail()" id="myform">
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="lastName" placeholder="Surname" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email* </label>
+                <div class="col-sm-9">
+                    <input type="email" required id="email" placeholder="Email" class="form-control" name= "email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" id="password" placeholder="Password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Height" class="col-sm-3 control-label">State </label>
+                <div class="col-sm-9">
+                <select style="width: 20pc;" id="s">
+
+                </select>
+                </div>
+            </div>
+            <!-- <div class="form-group">
+                <label for="lastName" class="col-sm-3 control-label">City</label>
+                <div class="col-sm-9">
+                    <input type="text" id="ci" placeholder="city" class="form-control" autofocus>
+                </div>
+            </div> -->
+            <div class="form-group">
+                <label for="phoneNumber" class="col-sm-3 control-label">City </label>
+                <div class="col-sm-9">
+                <select style="width: 20pc;" onfocus="displayCities()" id="ci">
+                </select>
+                
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Height" class="col-sm-3 control-label">Address</label>
+                <div class="col-sm-9">
+                    <input type="text" id="address" placeholder="" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Gender</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="radio-inline" id="genderbutton">
+                                <input type="radio" name="gender"  value="Female">Female</input>
+                                <input type="radio" name="gender" value="Male">Male</input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.form-group -->
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block">*Required fields</span>
+                </div>
+            </div>
+            <button onclick="create()" class="btn btn-primary">Register</button>
+        </form> <!-- /form -->
+    </div> <!-- ./container -->
+    <script src="sign-up.js"></script>
+    
+</body>
+</html>
+
